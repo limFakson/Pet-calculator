@@ -3,7 +3,7 @@ const cat = document.getElementById('cat');
 
 // Function to toggle the menu
   function toggleMenu() {
-    const menu = document.querySelector('.slide');
+    const menu = document.getElementById('menu');
     menu.style.transform = (menu.style.transform === "translateX(0%)" || menu.style.transform === "") ? "translateX(-100%)" : "translateX(0%)";
   }
 
