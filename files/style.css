@@ -1,0 +1,210 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--txt-color);
+    --pri-color : hsl(215, 33%, 17%);
+    --sec-color : #0F1722;
+    --button : #6C63FF;
+    --txt-color: #EAEAEA;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--pri-color);
+    padding-top: 4rem;   
+    display: grid;
+}
+.slide{
+    width: 12rem;
+    height: 100vh;
+    background-color: var(--sec-color);
+    border-right: 2px solid var(--txt-color);
+    position: absolute;
+    top: 0;
+    transform: translateX(-100%);
+}
+.app-title{
+    width: 100%;
+    margin-top: 3rem;
+    padding: 0 1rem;
+}
+.app-title h1{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+.slide h3{
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+} 
+.option{
+    width: 100%;
+    display: block;
+    transition: .2s ease-out;
+    cursor: pointer;
+}
+.option:hover{
+    background-color: var(--pri-color);
+}
+.option h3{
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 8px 0;
+    margin-top: 0.5rem;
+}
+.mode{
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    right: auto;
+    left: 10px;
+}
+main{
+    justify-self: center;
+    align-self: center;
+    margin: 0.8rem 3rem;
+}
+#dogcal{
+    display: block;
+}
+#catcal{
+    display: none;
+}
+.human-yr{
+    padding: 1rem 3rem;
+    text-align: center;
+    display: grid;
+}
+.human-yr h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 1rem;
+}
+.yr-input{
+    display: flex;
+    width: 9rem;
+    height: 2rem;
+    background-color: var(--sec-color);
+    box-shadow: 0 0 5px 1px var(--sec-color);
+    border-radius: 11px;
+    justify-self: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+.yr-input input[type=number]{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size:  0.9rem;
+    text-align: center;
+}
+.yr-input p{
+    background-color: var(--pri-color);
+    width: 4rem;
+    height: 100%;
+    border-radius: 0 11px 11px 0;
+    padding-top: 5px;
+}
+.breed{
+    padding: 1rem 3rem;
+    text-align: center;
+    display: grid;
+}
+.breed h2{
+    font-size:  1.2rem;
+    font-weight: 600;
+}
+.sel-input{
+    width: 8rem;
+    height: 2rem;
+    background-color: var(--sec-color);
+    box-shadow: 0 0 5px 1px var(--sec-color);
+    border-radius: 11px;
+    justify-self: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+select{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    padding-left: 8px;
+}
+option{
+    font-size: 0.8rem;
+    font-weight: 400;
+    background-color: var(--sec-color);
+}
+.output{
+    border: 1px solid var(--txt-color);
+    border-radius: 15px;
+    height: 3rem;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.output p{
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+#catcal .output{
+    margin-top: 4rem;
+}
+.button{
+    display: grid;
+    text-align: center;
+    margin-bottom: 1srem;
+    margin-top: 3.5rem;
+}
+.button span{
+    background-color: var(--button);
+    width: 10rem;
+    height: 2rem;
+    border-radius: 11px;
+    justify-self: center;
+}
+.button span button{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+@media (min-width: 1000px){
+    .slide{
+        width: 15rem;
+        position: absolute;
+        top: 0;
+        transform: translateX(0%);
+    }
+    .app-title{
+        width: 100%;
+        margin-top: 3rem;
+        padding: 3rem 1rem;
+    }
+    .app-title h1{
+        font-size: 1.5rem;
+    }       
+    .slide h3{
+        margin-top: 3rem;
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-top: 2rem;
+    }
+    .option{
+        margin: 1rem 0;
+        padding: 0;
+    }
+    .option h3{
+        margin: 1rem 0;
+        padding: 1rem 0;
+    }
+}

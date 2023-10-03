@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet cal</title>
+
+    <!--Extenal links-->
+    <link rel="stylesheet" href="files/style.css">
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <!--mobile slide bar for options-->
+    <nav>
+        <div class="slide">
+            <div class="app-title">
+                <h1>Pet Age Calculator</h1>
+            </div>
+
+            <h3>select your pet</h3>
+            <div class="option" id="dog">
+                <h3>Dog</h3>
+            </div>
+            <div class="option" id="cat">
+                <h3>Cat</h3>
+            </div>
+            <div class="mode">
+                <span id="light-mode">
+                    <p>Light mode</p>
+                    <i></i>
+                </span>
+                <span id="dark-mode">
+                    <p>Dark mode</p>
+                    <i></i>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!--Dog cal-->
+    <main id="dogcal">
+        <div class="human-yr">
+            <h2>Enter age in human years</h2>
+            <span class="yr-input">
+                <input type="number">
+                <p>Year</p>
+            </span>
+        </div>
+        <div class="breed">
+            <h2>Select dog's breed size</h2>
+            <span class="sel-input">
+                <select name="" id="sel">
+                    <option value="select">....</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </span>
+        </div>
+        <div class="output">
+            <p id="demo">demo</p>
+        </div>
+        <div class="button">
+            <span>
+              <button type="submit">Calculate</button>
+            </span>
+        </div>
+    </main>
+
+    <!--cat cal-->
+    <main id="catcal">
+        <div class="human-yr">
+            <h2>Enter age in human years</h2>
+            <span class="yr-input">
+                <input type="number">
+                <p>Year</p>
+            </span>
+        </div>
+        <div class="output">
+            <p id="demo">demo</p>
+        </div>
+        <div class="button">
+            <span>
+              <button type="submit">Calculate</button>
+            </span>
+        </div>
+    </main>
+
+    <!--JS links-->
+    <script src="./files/cal.js"></script>
+</body>
+</html>
