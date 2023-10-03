@@ -1,5 +1,5 @@
-const Dog = document.getElementById('dog');
-const cat = document.getElementById('cat');
+// const Dog = document.getElementById('dog');
+// const cat = document.getElementById('cat');
 
 // Function to toggle the menu
   function toggleMenu() {
